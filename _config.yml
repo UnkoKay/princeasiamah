@@ -2,7 +2,7 @@ title: "Prince Asiamah's Portfolio"
 email: asiamah6@gmail.com
 description: >-
   Geomatics Engineer specializing in GIS, Remote Sensing, and Spatial Data Analytics.
-baseurl: "/" # Leave this blank for local testing
+baseurl: "/princeasiamah" # Leave this blank for local testing
 url: "" # Leave this blank for local testing
 twitter_username: jekyllrb
 github_username: jekyll
