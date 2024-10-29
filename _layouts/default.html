@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{{ site.author }}">
+    <meta property="og:title" content="{{ page.title }} | {{ site.title }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:image" content="{{ site.url }}/assets/profile.jpg">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+
+    <!-- Font Awesome for Social Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+
+    <style>
+        /* Inline CSS for Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="site-header">
+        <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+        <nav class="site-nav">
+            <a href="{{ '/about.html' | relative_url }}">About</a>
+            <a href="{{ '/projects.html' | relative_url }}">Projects</a>
+            <a href="{{ '/posts.html' | relative_url }}">Blog</a> <!-- Blog Link -->
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        {{ content }}
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="https://github.com/UnkoKay" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/prince-asiamah-76153410b" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>&copy; {{ site.time | date: "%Y" }} {{ site.author }}</p>
+            <p>All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
