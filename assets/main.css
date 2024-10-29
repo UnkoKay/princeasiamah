@@ -78,7 +78,7 @@ header nav a:hover {
 
 /* Parallax Hero Section */
 .hero {
-    background-image: url('/assets/profile-hero.jpg'); /* Replace with your image path */
+    background-image: url('{{ "/assets/profile-hero.jpg" | relative_url }}');
     background-attachment: fixed; /* Parallax effect */
     background-size: cover;
     background-position: center;

@@ -20,7 +20,7 @@ title: Home
   <div class="container">
     <div class="about-content">
       <div class="about-image">
-        <img src="/assets/profile.jpg" alt="Prince Asiamah" />
+        <img src="{{ '/assets/profile.jpg' | relative_url }}" alt="Prince Asiamah" />
       </div>
       <div class="about-text">
         <h2>About Me</h2>
@@ -52,7 +52,7 @@ title: Home
     <h2>Highlighted Projects</h2>
     <div class="project-cards">
       <div class="card">
-        <img src="/assets/uav-project.jpg" alt="UAV Data Analysis">
+        <img src="{{ '/assets/uav-project.jpg' | relative_url }}" alt="UAV Data Analysis">
         <div class="card-content">
           <h3>UAV Data Analysis</h3>
           <p>Optimized medical supply routes using UAV data, reducing delivery time by 30%.</p>
@@ -60,7 +60,7 @@ title: Home
         </div>
       </div>
       <div class="card">
-        <img src="/assets/flood-project.jpg" alt="Flood Risk Mapping">
+        <img src="{{ '/assets/flood-project.jpg' | relative_url }}" alt="Flood Risk Mapping">
         <div class="card-content">
           <h3>Flood Risk Mapping</h3>
           <p>Created DEM-based flood models to assist disaster management in rural areas.</p>
@@ -68,7 +68,7 @@ title: Home
         </div>
       </div>
       <div class="card">
-        <img src="/assets/sensing-project.jpg" alt="Remote Sensing Pipeline">
+        <img src="{{ '/assets/sensing-project.jpg' | relative_url }}" alt="Remote Sensing Pipeline">
         <div class="card-content">
           <h3>Remote Sensing Pipeline</h3>
           <p>Developed automated geospatial workflows using Python and QGIS.</p>
